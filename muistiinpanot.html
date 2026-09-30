@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muistiinpanot – Suomen väestö muuttuu</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f2ed;
+    color: #252724;
+    line-height: 1.65;
+}
+
+header {
+    background: #f4f2ed;
+    border-bottom: 1px solid #d8d5ce;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    max-width: 1150px;
+    height: 72px;
+    margin: auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #52705f;
+}
+
+nav {
+    display: flex;
+    gap: 27px;
+}
+
+nav a {
+    color: #343733;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #52705f;
+}
+
+.page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 25px 100px;
+}
+
+.intro {
+    max-width: 720px;
+    margin-bottom: 55px;
+}
+
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: #68716b;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.intro p {
+    color: #656963;
+    font-size: 17px;
+}
+
+.notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.note {
+    background: white;
+    border: 1px solid #dedbd4;
+    padding: 30px;
+    min-height: 230px;
+}
+
+.note-number {
+    font-size: 11px;
+    color: #718078;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.note h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.note p {
+    color: #60645e;
+    font-size: 15px;
+}
+
+.note ul {
+    margin-left: 20px;
+    color: #60645e;
+    font-size: 15px;
+}
+
+.note li {
+    margin-bottom: 6px;
+}
+
+.summary {
+    margin-top: 65px;
+    background: #28372e;
+    color: white;
+    padding: 45px;
+}
+
+.summary h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.summary p {
+    color: #d1d8d2;
+    max-width: 700px;
+}
+
+footer {
+    background: #1c2721;
+    color: #aeb7b0;
+    padding: 28px 25px;
+    font-size: 12px;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #cbd1cc;
+}
+
+@media(max-width:800px) {
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .notes {
+        grid-template-columns: 1fr;
+    }
+
+    .summary {
+        padding: 30px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="nav">
+
+        <div class="logo">
+            Suomi <span>muuttuu</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Etusivu</a>
+            <a href="index.html#muutos">Muutos</a>
+            <a href="index.html#tilastot">Tilastot</a>
+            <a href="index.html#alueet">Alueet</a>
+            <a href="index.html#lahteet">Lähteet</a>
+            <a href="muistiinpanot.html">Muistiinpanot</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+    <section class="intro">
+
+        <div class="small-title">
+            Muistiinpanot
+        </div>
+
+        <h1>
+            Suomen väestö muuttuu.
+        </h1>
+
+        <p>
+            Tähän on koottu sivuston tärkeimmät asiat lyhyesti.
+            Näistä muistiinpanoista saa nopeasti kerrattua aiheen
+            ennen esimerkiksi esitelmää tai tehtävää.
+        </p>
+
+    </section>
+
+
+    <section class="notes">
+
+        <article class="note">
+
+            <div class="note-number">01 / VÄESTÖ</div>
+
+            <h2>
+                Suomen väkiluku
+            </h2>
+
+            <p>
+                Suomessa oli vuoden 2025 lopussa noin 5,65 miljoonaa
+                asukasta. Väkilukuun vaikuttavat syntyvyys, kuolleisuus
+                ja muuttoliike.
+            </p>
+
+        </article>
+
+
+        <article class="note">
+
+            <div class="note-number">02 / MAAHANMUUTTO</div>
+
+            <h2>
+                Nettomaahanmuutto
+            </h2>
+
+            <p>
+                Vuonna 2025 Suomeen muutti enemmän ihmisiä kuin
+                Suomesta muutti ulkomaille. Nettomaahanmuutto oli
+                31 233 henkilöä.
+            </p>
+
+        </article>
+
+
+        <article class="note">
+
+            <div class="note-number">03 / MONIMUOTOISUUS</div>
+
+            <h2>
+                Erilaiset taustat
+            </h2>
+
+            <p>
+                Suomessa asuu ihmisiä monista eri maista ja taustoista.
+                Vuoden 2025 lopussa ulkomaalaistaustaisia oli
+                660 800 henkilöä.
+            </p>
+
+        </article>
+
+
+        <article class="note">
+
+            <div class="note-number">04 / IKÄRAKENNE</div>
+
+            <h2>
+                Väestö ikääntyy
+            </h2>
+
+            <p>
+                Suomessa vanhempien ikäluokkien osuus väestöstä kasvaa.
+                Vuonna 2025 vähintään 65-vuotiaiden osuus oli 23,8
+                prosenttia.
+            </p>
+
+        </article>
+
+
+        <article class="note">
+
+            <div class="note-number">05 / ALUEET</div>
+
+            <h2>
+                Erot alueiden välillä
+            </h2>
+
+            <p>
+                Kaikkien Suomen alueiden väestö ei kehity samalla
+                tavalla. Osa kunnista kasvaa, kun taas toisissa
+                väkiluku vähenee.
+            </p>
+
+        </article>
+
+
+        <article class="note">
+
+            <div class="note-number">06 / UUSIMAA</div>
+
+            <h2>
+                Uusimaa
+            </h2>
+
+            <p>
+                Uudellamaalla ulkomaalaistaustaisen väestön osuus on
+                Suomen maakunnista suurin. Vuoden 2025 lopussa osuus
+                oli noin 20 prosenttia.
+            </p>
+
+        </article>
+
+
+        <article class="note">
+
+            <div class="note-number">07 / SYYT</div>
+
+            <h2>
+                Miksi ihmiset muuttavat?
+            </h2>
+
+            <ul>
+                <li>Työ ja työnteko</li>
+                <li>Opiskelu</li>
+                <li>Perhesyyt</li>
+                <li>Kansainvälinen suojelu</li>
+                <li>Muut henkilökohtaiset syyt</li>
+            </ul>
+
+        </article>
+
+
+        <article class="note">
+
+            <div class="note-number">08 / YHTEENVETO</div>
+
+            <h2>
+                Mitä tästä kannattaa muistaa?
+            </h2>
+
+            <p>
+                Suomen väestö muuttuu sekä määrältään että
+                rakenteeltaan. Maahanmuutto kasvattaa väkilukua,
+                väestö ikääntyy ja eri alueiden kehitys eriytyy.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <section class="summary">
+
+        <h2>
+            Lyhyesti
+        </h2>
+
+        <p>
+            Suomen väestö on nykyään monimuotoisempi kuin aikaisemmin.
+            Muutokseen vaikuttavat erityisesti muuttoliike, syntyvyys,
+            kuolleisuus ja väestön ikärakenne. Muutokset näkyvät
+            eri tavalla eri puolilla Suomea.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+            Suomen väestö muuttuu ja monipuolistuu - By Aaron Kajaus - Dev Aaron Kajaus
+        </div>
+
+        <div>
+            <a href="index.html">Takaisin pääsivulle</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
